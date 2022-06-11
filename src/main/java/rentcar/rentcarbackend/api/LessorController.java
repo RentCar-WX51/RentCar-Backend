@@ -1,8 +1,8 @@
 package rentcar.rentcarbackend.api;
 
-import com.rentcar.rencar.domain.model.entity.Lessor;
-import com.rentcar.rencar.domain.service.LessorService;
-import com.rentcar.rencar.shared.exection.NotFoundException;
+import rentcar.rentcarbackend.domain.model.entity.Lessor;
+import rentcar.rentcarbackend.domain.service.LessorService;
+import rentcar.rentcarbackend.shared.exception.NotFoundException;
 import lombok.AllArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

@@ -1,8 +1,8 @@
 package rentcar.rentcarbackend.service;
 
-import com.rentcar.rencar.domain.model.entity.Lessor;
-import com.rentcar.rencar.domain.persistence.LessorRepository;
-import com.rentcar.rencar.domain.service.LessorService;
+import rentcar.rentcarbackend.domain.model.entity.Lessor;
+import rentcar.rentcarbackend.domain.persistence.LessorRepository;
+import rentcar.rentcarbackend.domain.service.LessorService;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

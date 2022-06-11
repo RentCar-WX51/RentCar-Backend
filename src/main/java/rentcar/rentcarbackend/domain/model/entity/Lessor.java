@@ -9,6 +9,7 @@ import javax.validation.constraints.Max;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
+import java.util.List;
 
 
 @Entity
@@ -40,9 +41,9 @@ public class Lessor {
     @Column(name = "address")
     private String address;
 
-    @ManyToMany
+    @OneToMany(mappedBy = "lessor")
     @JoinColumn(name = "cars_id")
     @JsonIgnoreProperties(value = "lessors")
-    private Cars car;
+    private List<Car> cars;
 
 }

@@ -1,6 +1,6 @@
 package rentcar.rentcarbackend.domain.service;
 
-import com.rentcar.rencar.domain.model.entity.Lessor;
+import rentcar.rentcarbackend.domain.model.entity.Lessor;
 
 import java.util.List;
 import java.util.Optional;
