@@ -13,6 +13,7 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("/cars")
+@AllArgsConstructor
 public class CarController {
     private final CarService carService;
 
