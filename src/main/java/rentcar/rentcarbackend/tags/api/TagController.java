@@ -39,7 +39,7 @@ public class TagController {
         if (!tagService.existsById(id)) {
             throw new NotFoundException("Tag", id);
         } else
-        {   // Faltan las demas validaciones
+        {
             return tagService.update(tag);
         }
     }
@@ -56,7 +56,7 @@ public class TagController {
         if (!tagService.existsById(id)) {
             throw new NotFoundException("Tag", id);
         } else
-        {   // Faltan las demas validaciones
+        {
             tagService.deleteById(id);
             //return new ResponseEntity<>(HttpStatus.ACCEPTED);
             return ResponseEntity.accepted().build();   // Lambda
