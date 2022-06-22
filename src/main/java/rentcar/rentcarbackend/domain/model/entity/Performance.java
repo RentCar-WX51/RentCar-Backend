@@ -9,6 +9,7 @@ import javax.persistence.Id;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
+import javax.xml.transform.Source;
 
 @Getter
 @Setter
@@ -20,7 +21,7 @@ import javax.validation.constraints.Size;
 public class Performance {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long Id;
+    private Integer Id;
 
     @NotNull
     @NotBlank
@@ -41,6 +42,7 @@ public class Performance {
 
     @Size(max = 10)
     private String accelerationVehicle;
+
 
     //Relationships
 

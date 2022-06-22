@@ -7,4 +7,5 @@ import java.util.Optional;
 
 public interface PerformanceRepository extends JpaRepository<Performance, Long> {
     List<Performance> findByLicensePlate(String licensePlate);
+    Performance findByName(String name);
 }
