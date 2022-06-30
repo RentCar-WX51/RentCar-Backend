@@ -44,7 +44,7 @@ public class PerformanceServicelmpl implements PerformanceService {
     }
 
     @Override
-    public Performance create(Performance performance) {
+    public Performance create(Long performanceId,Performance performance) {
         Set<ConstraintViolation<Performance>> violations = validator.validate(performance);
         if(!violations.isEmpty())
             throw new ValidationException(ENTITY, violations);

@@ -1,8 +1,8 @@
-package rentcar.rentcarbackend.domain.model.entity;
+package rentcar.rentcarbackend.resource;
 
-import lombok.*;
-import org.hibernate.annotations.Type;
-import javax.persistence.Entity;
+import lombok.Getter;
+import lombok.Setter;
+
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
@@ -12,44 +12,36 @@ import javax.validation.constraints.Size;
 
 @Getter
 @Setter
-@With
-@NoArgsConstructor
-@AllArgsConstructor
-@Entity
-
-public class Performance {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+public class UpdatePerformanceResource {
     private Long Id;
 
     @NotNull
     @NotBlank
     @Size(max = 60)
-    @Type(type = "org.hibernate.type.TextType")
     private String name;
 
+    @NotNull
+    @NotBlank
     @Size(max = 60)
-    @Type(type = "org.hibernate.type.TextType")
     private String vehicleName;
 
+    @NotNull
+    @NotBlank
     @Size(max = 60)
-    @Type(type = "org.hibernate.type.TextType")
     private String securityVehicle;
 
+    @NotNull
+    @NotBlank
     @Size(max = 15)
-    @Type(type = "org.hibernate.type.TextType")
     private String fuelVehicle;
 
+    @NotNull
+    @NotBlank
     @Size(max = 10)
-    @Type(type = "org.hibernate.type.TextType")
     private String parMotorVehicle;
 
+    @NotNull
+    @NotBlank
     @Size(max = 10)
-    @Type(type = "org.hibernate.type.TextType")
     private String accelerationVehicle;
-
-
-    //Relationships
-
-
 }
