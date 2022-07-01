@@ -11,7 +11,7 @@ import rentcar.rentcarbackend.tags.shared.exception.NotFoundException;
 import java.util.List;
 import java.util.Optional;
 
-@SecurityRequirement(name = "acme")
+@SecurityRequirement(name = "rentcar")
 @RestController
 @RequestMapping("/api/v1/tags")
 @AllArgsConstructor

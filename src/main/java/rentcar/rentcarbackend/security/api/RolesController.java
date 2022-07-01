@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-@SecurityRequirement(name = "acme")
+@SecurityRequirement(name = "rentcar")
 @Tag(name = "Roles", description = "Create, read, update and delete roles")
 @CrossOrigin(origins = "*", maxAge = 3600)
 @RestController

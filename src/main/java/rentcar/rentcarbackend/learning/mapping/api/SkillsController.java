@@ -14,7 +14,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
-@SecurityRequirement(name = "acme")
+@SecurityRequirement(name = "rentcar")
 @RestController
 @RequestMapping("/api/v1/skills")
 @Tag(name = "Skills", description = "Create, read, update and delete skills")

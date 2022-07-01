@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-@SecurityRequirement(name = "acme")
+@SecurityRequirement(name = "rentcar")
 @RestController
 @RequestMapping("/api/v1/criteria")
 @Tag(name = "Criteria", description = "Create, read, update and delete criteria")

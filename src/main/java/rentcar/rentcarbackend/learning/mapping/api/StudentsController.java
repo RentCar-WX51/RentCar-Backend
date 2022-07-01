@@ -19,7 +19,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
-@SecurityRequirement(name = "acme")
+@SecurityRequirement(name = "rentcar")
 @RestController
 @RequestMapping(value = "api/v1/students", produces = "application/json")
 @Tag(name = "Students", description = "Create, read, update and delete students")

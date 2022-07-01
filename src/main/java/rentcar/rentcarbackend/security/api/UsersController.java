@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
 
-@SecurityRequirement(name = "acme")
+@SecurityRequirement(name = "rentcar")
 @Tag(name = "Users", description = "Create, read, update and delete users")
 @CrossOrigin(origins = "*", maxAge = 3600)
 @RestController
