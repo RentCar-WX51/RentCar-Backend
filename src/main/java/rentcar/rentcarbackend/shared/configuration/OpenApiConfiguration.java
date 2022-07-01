@@ -1,7 +1,6 @@
 package rentcar.rentcarbackend.shared.configuration;
 
 import io.swagger.v3.oas.models.OpenAPI;
-import io.swagger.v3.oas.models.info.Contact;
 import io.swagger.v3.oas.models.info.Info;
 import io.swagger.v3.oas.models.info.License;
 import org.springframework.beans.factory.annotation.Value;
@@ -16,13 +15,11 @@ public class OpenApiConfiguration {
             @Value("${documentation.application.version}") String applicationVersion) {
         return new OpenAPI()
                 .info(new Info()
-                        .title("ACME Learning Center API")
+                        .title("YouSoftware RentCar API")
                         .version(applicationVersion)
                         .description(applicationDescription)
-                        .termsOfService("https://acme-learning.com/tos")
-                        .license(new License().name("Apache 2.0 License").url("https://acme-learning.com/license"))
-                        .contact(new Contact()
-                                .url("https://acme.studio")
-                                .name("ACME.studio")));
+                        .termsOfService("https://rentcar-frontend.web.app/tos")
+                        .license(new License().name("Apache 2.0 License").url("https://rentcar-frontend.web.app/license"))
+                        );
     }
 }

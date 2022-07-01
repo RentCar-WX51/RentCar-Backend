@@ -1,2 +1,2 @@
-# LearningCenter
-ACME Learning Center Backend Application, built using Spring Boot, Spring Data JPA, with MySQL persistance.
+# RentCar
+YouSoftware Rentcar Backend Application, built using Spring Boot, Spring Data JPA, with PostgreSQL persistance.
