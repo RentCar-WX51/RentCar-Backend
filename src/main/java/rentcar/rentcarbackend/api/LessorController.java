@@ -42,7 +42,7 @@ public class LessorController {
                 throw new NotFoundException("Lessor", id);
         else
         {
-            return lessorService.update(lessor);
+            return lessorService.update(id, lessor);
         }
     }
 
