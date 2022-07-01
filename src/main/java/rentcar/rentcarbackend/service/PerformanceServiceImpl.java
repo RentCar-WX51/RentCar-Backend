@@ -57,7 +57,7 @@ public class PerformanceServiceImpl implements PerformanceService {
             throw new ResourceValidationException(ENTITY, "A performance with the same name already exists.");
         return performanceRepository.save(performance);
     }
-
+    
     @Override
     public Performance update(Integer id, Performance performance) {
         Set<ConstraintViolation<Performance>> violations = validator.validate(performance);
