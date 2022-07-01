@@ -1,7 +1,7 @@
 package rentcar.rentcarbackend.service;
 
 import rentcar.rentcarbackend.domain.model.entity.Lessor;
-import rentcar.rentcarbackend.domain.persistence.LessorRepository;
+import rentcar.rentcarbackend.domain.service.persistence.LessorRepository;
 import rentcar.rentcarbackend.domain.service.LessorService;
 import org.springframework.stereotype.Service;
 

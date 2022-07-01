@@ -10,9 +10,11 @@ import java.util.List;
 public interface PerformanceService {
     List<Performance> getAll();
     Page<Performance> getAll(Pageable pageable);
-    Performance getById(Long performanceId);
+
+    Performance getById(Integer performanceId);
     Performance create(Performance performance);
-    Performance update(Long id, Performance performance);
-    ResponseEntity<?> delete(Long performanceId);
+
+    Performance update(Integer id, Performance performance);
+    ResponseEntity<?> delete(Integer performanceId);
 
 }

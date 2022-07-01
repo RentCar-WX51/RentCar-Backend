@@ -8,19 +8,19 @@ import java.util.Set;
 import java.util.stream.Collectors;
 
 @ResponseStatus(HttpStatus.BAD_REQUEST)
-public class ValidationException extends RuntimeException {
-    public ValidationException() { super(); }
+public class ResourceValidationException extends RuntimeException {
+    public ResourceValidationException() { super(); }
 
-    public ValidationException(String message) { super(message); }
+    public ResourceValidationException(String message) { super(message); }
 
-    public ValidationException(String message, Throwable cause) { super(message, cause); }
+    public ResourceValidationException(String message, Throwable cause) { super(message, cause); }
 
-    public <T> ValidationException(String resourceName, Set<ConstraintViolation<T>> violations)
+    public <T> ResourceValidationException(String resourceName, Set<ConstraintViolation<T>> violations)
     {
         super(String.format("Not all constraints satisfied for %s: %s", resourceName,
                 violations.stream().map(violation -> String.format("%s %s", violation.getPropertyPath(),
                         violation.getMessage())).collect(Collectors.joining(", "))));
     }
 
-    public ValidationException(String resourceName, String message) { super(String.format("Not all constraints satisfied for %s: %s", resourceName, message)); }
+    public ResourceValidationException(String resourceName, String message) { super(String.format("Not all constraints satisfied for %s: %s", resourceName, message)); }
 }
