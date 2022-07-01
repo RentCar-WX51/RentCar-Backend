@@ -1,7 +1,5 @@
 package rentcar.rentcarbackend.test.step;
 
-import rentcar.rentcarbackend.learning.resource.CreateStudentResource;
-import rentcar.rentcarbackend.learning.resource.StudentResource;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import io.cucumber.java.en.And;
@@ -21,7 +19,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 @CucumberContextConfiguration
 public class StudentStepDefinitions {
-
+/*
     @Autowired
     private TestRestTemplate testRestTemplate;
 
@@ -93,4 +91,5 @@ public class StudentStepDefinitions {
         String responseBody = responseEntity.getBody();
         assertThat(responseBody).contains(expectedMessage);
     }
+     */
 }
