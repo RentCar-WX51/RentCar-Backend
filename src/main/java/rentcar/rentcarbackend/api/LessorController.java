@@ -47,7 +47,7 @@ public class LessorController {
     }
 
     @PostMapping
-    public ResponseEntity<?> createStudent(@RequestBody Lessor lessor)
+    public ResponseEntity<?> create(@RequestBody Lessor lessor)
     {
         Lessor lessorResponse = lessorService.create(lessor);
         return new ResponseEntity<>(lessorResponse, HttpStatus.CREATED);
