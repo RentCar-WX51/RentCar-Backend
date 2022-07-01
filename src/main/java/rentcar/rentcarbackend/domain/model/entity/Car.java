@@ -8,7 +8,6 @@ import javax.persistence.*;
 @Entity
 @Table(name = "cars")
 @Data
-
 public class Car {
 
     @Id
@@ -26,5 +25,9 @@ public class Car {
 
     @Column(name = "age", columnDefinition = "SMALLINT")
     private Integer age;
+
+    @ManyToOne(fetch = FetchType.LAZY, optional = false)
+    @JoinColumn(name = "lessor_id", nullable = false)
+    private Lessor lessor;
 
 }
