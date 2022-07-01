@@ -8,11 +8,11 @@
         <version>2.6.7</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>com.acme</groupId>
-    <artifactId>LearningCenter</artifactId>
-    <version>1.0</version>
-    <name>LearningCenter</name>
-    <description>ACME LearningCenter RESTful API, made with Java and Spring Boot, applying domain-driven architecture approach.</description>
+    <groupId>rentcar</groupId>
+    <artifactId>rentcar-backend</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>Rentcar-Backend</name>
+    <description>RentCar API</description>
     <properties>
         <java.version>17</java.version>
     </properties>
