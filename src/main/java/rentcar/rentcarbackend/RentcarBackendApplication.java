@@ -12,10 +12,10 @@ import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 @OpenAPIDefinition
 @EnableJpaAuditing
 @SpringBootApplication
-public class LearningCenterApplication {
+public class RentcarBackendApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(LearningCenterApplication.class, args);
+        SpringApplication.run(RentcarBackendApplication.class, args);
     }
 
 
