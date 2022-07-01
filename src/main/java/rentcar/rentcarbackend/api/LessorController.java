@@ -2,7 +2,7 @@ package rentcar.rentcarbackend.api;
 
 import rentcar.rentcarbackend.domain.model.entity.Lessor;
 import rentcar.rentcarbackend.domain.service.LessorService;
-import rentcar.rentcarbackend.shared.exception.NotFoundException;
+import rentcar.rentcarbackend.shared.exception.ResourceNotFoundException;
 import lombok.AllArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -28,7 +28,7 @@ public class LessorController {
     @GetMapping("{id}")
     public Lessor getById(@PathVariable("id") Integer id) {
         if (!lessorService.existsById(id))
-            throw new NotFoundException("Lessor", id);
+            throw new ResourceNotFoundException("Lessor", id);
         else {
             Optional<Lessor> optional = lessorService.getById(id);
             return optional.get();
@@ -39,7 +39,7 @@ public class LessorController {
     public Lessor updateById(@PathVariable("id") Integer id, @RequestBody Lessor lessor)
     {
         if (!lessorService.existsById(id))
-                throw new NotFoundException("Lessor", id);
+                throw new ResourceNotFoundException("Lessor", id);
         else
         {
             return lessorService.update(lessor);
@@ -57,7 +57,7 @@ public class LessorController {
     public ResponseEntity<?> deleteById(@PathVariable("id") Integer id)
     {
         if (!lessorService.existsById(id))
-            throw new NotFoundException("Lessor", id);
+            throw new ResourceNotFoundException("Lessor", id);
         else
         {
             lessorService.deleteById(id);

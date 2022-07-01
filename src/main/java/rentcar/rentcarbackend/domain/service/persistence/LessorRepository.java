@@ -1,4 +1,4 @@
-package rentcar.rentcarbackend.domain.persistence;
+package rentcar.rentcarbackend.domain.service.persistence;
 
 import rentcar.rentcarbackend.domain.model.entity.Lessor;
 import org.springframework.data.jpa.repository.JpaRepository;

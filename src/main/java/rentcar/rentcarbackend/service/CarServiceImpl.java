@@ -2,7 +2,7 @@ package rentcar.rentcarbackend.service;
 
 import org.springframework.stereotype.Service;
 import rentcar.rentcarbackend.domain.model.entity.Car;
-import rentcar.rentcarbackend.domain.persistence.CarRepository;
+import rentcar.rentcarbackend.domain.service.persistence.CarRepository;
 import rentcar.rentcarbackend.domain.service.CarService;
 
 import java.util.List;
@@ -10,8 +10,6 @@ import java.util.Optional;
 
 @Service
 public class CarServiceImpl implements CarService {
-
-
     private final CarRepository carRepository;
 
     public CarServiceImpl(CarRepository carRepository){

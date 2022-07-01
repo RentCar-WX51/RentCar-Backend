@@ -27,6 +27,4 @@ public class Car {
     @Column(name = "age", columnDefinition = "SMALLINT")
     private Integer age;
 
-
-
 }

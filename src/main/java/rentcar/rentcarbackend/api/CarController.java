@@ -6,7 +6,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import rentcar.rentcarbackend.domain.model.entity.Car;
 import rentcar.rentcarbackend.domain.service.CarService;
-import rentcar.rentcarbackend.shared.exception.NotFoundException;
+import rentcar.rentcarbackend.shared.exception.ResourceNotFoundException;
 
 import java.util.List;
 import java.util.Optional;
@@ -27,7 +27,7 @@ public class CarController {
     @GetMapping("{id}") //  /students/{id}
     public Car getById(@PathVariable("id") Integer id) {
         if (!carService.existsById(id)) {
-            throw new NotFoundException("Car", id);
+            throw new ResourceNotFoundException("Car", id);
         } else {
             Optional<Car> optional = carService.getById(id);
             return optional.get();
@@ -45,7 +45,7 @@ public class CarController {
 
     public ResponseEntity<?> deleteById(@PathVariable("id") Integer id) {
         if (!carService.existsById(id)) {
-            throw new NotFoundException("Car", id);
+            throw new ResourceNotFoundException("Car", id);
         } else
         {   // Faltan las demas validaciones
             carService.deleteById(id);
